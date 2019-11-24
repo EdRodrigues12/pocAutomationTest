@@ -18,7 +18,7 @@ import java.net.MalformedURLException;
 )
 
 public class AndroidTest {
-    @BeforeClass
+    /*@BeforeClass
     public static void setUp() throws MalformedURLException {
         DriverFactory.createDriverByParameter("Android");
     }
@@ -26,5 +26,5 @@ public class AndroidTest {
     @AfterClass
     public static void tearDown(){
         DriverFactory.quitDriver();
-    }
+    }*/
 }
