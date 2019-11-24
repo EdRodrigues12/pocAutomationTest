@@ -7,7 +7,7 @@ Funcionalidade: Funções Matematicas
   @soma
   Esquema do Cenário: Realizar uma soma de dois numeros inteiro
     Dado que um usuário entrou com o numero <Numero 1>
-    E que o usuário clicou no botão +
+    E que o usuário clicou no botão de soma
     E que um usuário entrou com o segundo numero de valor <Numero 2>
     Quando o usuário clicar no botão = da calculadora
     Então o resultado deve ser <Resultado>
@@ -18,7 +18,7 @@ Funcionalidade: Funções Matematicas
   @subtracao
   Esquema do Cenário: Realizar uma subtração de dois numeros inteiro
     Dado que um usuário entrou com o numero <Numero 1>
-    E que o usuário clicou no botão -
+    E que o usuário clicou no botão de subtração
     E que um usuário entrou com o segundo numero de valor <Numero 2>
     Quando o usuário clicar no botão = da calculadora
     Então o resultado deve ser <Resultado>
@@ -29,7 +29,7 @@ Funcionalidade: Funções Matematicas
   @multiplicacao
   Esquema do Cenário: Realizar uma multiplicação de dois numeros inteiro
     Dado que um usuário entrou com o numero <Numero 1>
-    E que o usuário clicou no botão *
+    E que o usuário clicou no botão de multiplicação
     E que um usuário entrou com o segundo numero de valor <Numero 2>
     Quando o usuário clicar no botão = da calculadora
     Então o resultado deve ser <Resultado>
@@ -40,7 +40,7 @@ Funcionalidade: Funções Matematicas
   @divisao
   Esquema do Cenário: Realizar uma divisão de um numeros inteiro
     Dado que um usuário entrou com o numero <Numero 1>
-    E que o usuário clicou no botão /
+    E que o usuário clicou no botão de divisão
     E que um usuário entrou com o segundo numero de valor <Numero 2>
     Quando o usuário clicar no botão = da calculadora
     Então o resultado deve ser <Resultado>
