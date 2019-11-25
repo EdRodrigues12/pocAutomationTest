@@ -6,67 +6,105 @@ import org.openqa.selenium.remote.RemoteWebElement;
 
 public class CalculadoraScreen extends BasePage{
 
-    @AndroidFindBy(id = "card_container")
-    @iOSXCUITFindBy(accessibility = "bannerCell")
-    public RemoteWebElement bannerPrincipal;
+    @AndroidFindBy(id = "digit_1")
+    public RemoteWebElement btnNumber1Calculadora;
 
-    @AndroidFindBy(id = "img_item")
-    @iOSXCUITFindBy(accessibility = "news_card_view")
-    public RemoteWebElement bannerHabilitar;
+    @AndroidFindBy(id = "digit_5")
+    public RemoteWebElement btnNumber5Calculadora;
 
-    @AndroidFindBy(id = "btn_enable_now")
-    @iOSXCUITFindBy(accessibility = "COMEÇAR HABILITAÇÃO")
-    public RemoteWebElement btnVamosLa;
+    @AndroidFindBy(id = "digit_0")
+    public RemoteWebElement btnNumber0Calculadora;
 
-    @AndroidFindBy(id = "btn_request_sms")
-    @iOSXCUITFindBy(accessibility = "btn_request_sms")
-    public RemoteWebElement btnSolicitarSms;
+    @AndroidFindBy(id = "digit_2")
+    public RemoteWebElement btnNumber2Calculadora;
 
-    @AndroidFindBy(id = "txt_confirm_sms_token")
-    @iOSXCUITFindBy(accessibility = "txt_confirm_sms_token")
-    public RemoteWebElement edtConfirmeSms;
+    @AndroidFindBy(id = "digit_4")
+    public RemoteWebElement btnNumber4Calculadora;
 
-    @AndroidFindBy(id = "doDepositButton")
-    @iOSXCUITFindBy(accessibility = "doDepositButton")
-    public RemoteWebElement btnSolicitarDeposito;
+    @AndroidFindBy(id = "digit_9")
+    public RemoteWebElement btnNumber9Calculadora;
 
-    @AndroidFindBy(id = "typeDepositButton")
-    @iOSXCUITFindBy(accessibility = "typeDepositButton")
-    public RemoteWebElement btnInformarDeposito;
+    @AndroidFindBy(id = "op_add")
+    public RemoteWebElement btnSomaCalculadora;
 
-    @AndroidFindBy(id = "valueEdit")
-    @iOSXCUITFindBy(accessibility = "valueEdit")
-    public RemoteWebElement edtValorDeposito;
+    @AndroidFindBy(id = "op_div")
+    public RemoteWebElement btnDivisaoCalculadora;
 
-    @AndroidFindBy(id = "confirmDepositNowButton")
-    @iOSXCUITFindBy(accessibility = "confirmDepositNowButton")
-    public RemoteWebElement btnConfirmarDeposito;
+    @AndroidFindBy(id = "op_sub")
+    public RemoteWebElement btnSubtracaoCalculadora;
 
-    @AndroidFindBy(id = "btn_agree_sms_information")
-    @iOSXCUITFindBy(accessibility = "btn_agree_sms_information")
-    public RemoteWebElement btnEntendi;
+    @AndroidFindBy(id = "op_mul")
+    public RemoteWebElement btnMultiplicacaoCalculadora;
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Transferências']")
-    @iOSXCUITFindBy(xpath = "//*[@text='Transferências']")
-    public RemoteWebElement btnTransferencias;
+    @AndroidFindBy(id = "eq")
+    public RemoteWebElement btnIgualCalculadora;
 
-    @iOSXCUITFindBy(accessibility = "ENTENDI")
-    public RemoteWebElement btnUnderstoodIos;
+    @AndroidFindBy(id = "result")
+    public RemoteWebElement edtResultCalculo;
 
-    public CalculadoraScreen enterPrincipalBannerAppToken() {
-        ElementsHelper.waitForElementToLoad(bannerPrincipal, 5).click();
+    public String btnNumber1() {
+        ElementsHelper.waitForElementToLoad(btnNumber1Calculadora, 2).click();
+        return btnNumber1Calculadora.getText();
+    }
+
+
+    public String btnNumber0() {
+        ElementsHelper.waitForElementToLoad(btnNumber0Calculadora, 2).click();
+        return btnNumber0Calculadora.getText();
+    }
+
+    public String btnNumber5() {
+        ElementsHelper.waitForElementToLoad(btnNumber5Calculadora, 2).click();
+        return btnNumber5Calculadora.getText();
+    }
+
+    public CalculadoraScreen btnSoma() {
+        ElementsHelper.waitForElementToLoad(btnSomaCalculadora, 2).click();
         return this;
     }
 
-    public CalculadoraScreen enterBannerAppToken() {
-        ElementsHelper.waitForElementToLoad(bannerHabilitar, 15).click();
+    public CalculadoraScreen btnIgual() {
+        ElementsHelper.waitForElementToLoad(btnIgualCalculadora, 2).click();
         return this;
     }
 
-    public CalculadoraScreen enterWelcome() {
-        ElementsHelper.waitForElementToLoad(btnVamosLa, 15).click();
+    public String result() {
+        ElementsHelper.waitForElementToLoad(edtResultCalculo, 2);
+
+        return edtResultCalculo.getText();
+    }
+
+
+    public CalculadoraScreen btnNumber2() {
+        ElementsHelper.waitForElementToLoad(btnNumber2Calculadora, 2).click();
         return this;
     }
+
+    public CalculadoraScreen btnNumber4() {
+        ElementsHelper.waitForElementToLoad(btnNumber4Calculadora, 2).click();
+        return this;
+    }
+
+    public CalculadoraScreen btnNumber9() {
+        ElementsHelper.waitForElementToLoad(btnNumber9Calculadora, 2).click();
+        return this;
+    }
+
+    public CalculadoraScreen btnDivisao() {
+        ElementsHelper.waitForElementToLoad(btnDivisaoCalculadora, 2).click();
+        return this;
+    }
+
+    public CalculadoraScreen btnSubtracao() {
+        ElementsHelper.waitForElementToLoad(btnSubtracaoCalculadora, 2).click();
+        return this;
+    }
+
+    public CalculadoraScreen btnMultiplicacao() {
+        ElementsHelper.waitForElementToLoad(btnMultiplicacaoCalculadora, 2).click();
+        return this;
+    }
+
 
 }
 

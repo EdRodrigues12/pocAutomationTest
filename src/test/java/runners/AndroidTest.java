@@ -11,14 +11,14 @@ import java.net.MalformedURLException;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"pretty", "html:target/cucumberHtmlReport"},   dryRun = true,
+        plugin = {"pretty", "html:target/cucumberHtmlReport"},   dryRun = false,
         features = "src/test/resources/features",
         glue = "steps",
-        tags = {"~@ignore","@soma, @divisao"}
+        tags = {"~@ignore", "@soma"}
 )
 
 public class AndroidTest {
-    /*@BeforeClass
+    @BeforeClass
     public static void setUp() throws MalformedURLException {
         DriverFactory.createDriverByParameter("Android");
     }
@@ -26,5 +26,5 @@ public class AndroidTest {
     @AfterClass
     public static void tearDown(){
         DriverFactory.quitDriver();
-    }*/
+    }
 }
